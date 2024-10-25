@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RuleEngine</string>
+    <string name="create_rule">Create Rule</string>
+</resources>

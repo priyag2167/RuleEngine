@@ -1,0 +1,123 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ruleEvaluationLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".ui.RuleEvaluationActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Evaluate Rule"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<EditText
+android:id="@+id/ageInput"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:hint="Enter Age"
+android:padding="12dp"
+android:background="@drawable/edit_text_background"
+android:textColor="@android:color/black"
+    android:textSize="@dimen/_15ssp"
+    android:layout_marginTop="@dimen/_55sdp"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+/>
+
+<EditText
+android:id="@+id/departmentInput"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:hint="Enter Department"
+android:padding="12dp"
+android:background="@drawable/edit_text_background"
+android:textColor="@android:color/black"
+    android:textSize="@dimen/_15ssp"
+    android:layout_marginTop="@dimen/_15sdp"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+app:layout_constraintTop_toBottomOf="@+id/ageInput"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+/>
+
+<EditText
+android:id="@+id/salaryInput"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:hint="Enter Salary"
+android:padding="12dp"
+android:background="@drawable/edit_text_background"
+android:textColor="@android:color/black"
+    android:textSize="@dimen/_15ssp"
+    android:layout_marginTop="@dimen/_15sdp"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+app:layout_constraintTop_toBottomOf="@+id/departmentInput"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+/>
+
+<EditText
+android:id="@+id/experienceInput"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:hint="Enter Experience (in years)"
+android:padding="12dp"
+android:background="@drawable/edit_text_background"
+android:textColor="@android:color/black"
+    android:textSize="@dimen/_15ssp"
+    android:layout_marginTop="@dimen/_15sdp"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+app:layout_constraintTop_toBottomOf="@+id/salaryInput"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+/>
+
+   <Button
+       android:id="@+id/evaluateButton"
+    android:layout_width="@dimen/_150sdp"
+    android:layout_height="@dimen/_40sdp"
+    android:text="Evaluate Rule"
+    android:backgroundTint="@color/colorPrimary"
+    android:textColor="@android:color/white"
+    android:padding="10dp"
+    android:elevation="4dp"
+    android:textSize="@dimen/_15ssp"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    app:layout_constraintTop_toBottomOf="@+id/experienceInput"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    />
+
+<TextView
+android:id="@+id/resultText"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Result will be shown here"
+android:textSize="@dimen/_15ssp"
+    android:layout_marginTop="@dimen/_40sdp"
+android:textColor="@android:color/black"
+app:layout_constraintTop_toBottomOf="@+id/evaluateButton"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
